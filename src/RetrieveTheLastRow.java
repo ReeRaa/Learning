@@ -7,6 +7,7 @@ public class RetrieveTheLastRow {
             Statement stmn=conn.createStatement();
             ResultSet rs= stmn.executeQuery("select max(id) from fortunes;");
 
+            //retrieve column index
             int m=rs.getInt(1);
             System.out.println(m);
 
