@@ -55,7 +55,7 @@ public class Main {
                         results.getString(COLUMN_EMAIL));
             }
 
-            //close all
+            //close all connections
             results.close();
             statement.close();
             conn.close();
